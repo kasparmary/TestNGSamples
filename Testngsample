@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+Group sample:
+-------------
+<suite name="TestNg Suite" verbose="2">
+<test name="TestNg Testa">
+	<groups>
+		<run>
+			<include name="Vivo"></include>
+			<include name="Apple"></include>
+		</run>
+	</groups>	
+<classes>
+		<class name="loginPackage.GroupingExample" />
+</classes>
+</test>
+</suite>
+
+suite sample change:
+-----------------
+<suite name="TestNg Suite" verbose="2">
+<test name="TestNg Test">
+	<classes>
+			<class name="loginPackage.AnnotationHeirachyExample" />
+			<class name="loginPackage.DependenciesManagement" />
+			<class name="loginPackage.SuiteExample" />
+	</classes>
+</test>
+
+Parameter sample:
+-------------------
+<suite name="TestNg Suite" verbose="2">
+<test name="TestNg Testa">	
+<parameter name="DynamicValue" value="Kaspar MAry"> </parameter>
+<classes>
+		<class name="loginPackage.ParameterizationExample" />
+</classes>
+</test>
+</suite>
+
+Parallel Testing:
+---------------------
+<suite name="TestNg Suite" verbose="2" parallel="methods" thread-count="5">
+<test name="TestNg Testa">
+<classes>
+		<class name="loginPackage.ParallelTesting" />
+</classes>
+</test>
+</suite>
+
+Listeners sample xml code:
+-------------------------------
+<suite name="TestNg Suite" verbose="2" parallel="methods" thread-count="2">
+	<listeners>
+		<listener class-name="loginPackage.ListenersExample"></listener>
+	</listeners>
+<test name="TestNg Testa">
+<classes>
+		<class name="loginPackage.BothCorrect" />
+</classes>
+</test>
+</suite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="loginPackage.SkipATestCase"/>
+      <class name="InterviewQuestions.SampleAnnotationTest"/>
+      <class name="loginPackage.AssertionsExample"/>
+      <class name="InterviewQuestions.RetryFailedTest"/>
+      <class name="loginPackage.ParallelTesting"/>
+      <class name="DataDrivenFramework.Login"/>
+      <class name="loginPackage.AnnotationHeirachyExample"/>
+      <class name="loginPackage.GroupingExample"/>
+      <class name="DataDrivenFramework.LoginFromJXL"/>
+      <class name="loginPackage.TimeoutExample"/>
+      <class name="loginPackage.ExecuteTestMultipletime"/>
+      <class name="loginPackage.TestNgListenersExample"/>
+      <class name="loginPackage.SuiteExample"/>
+      <class name="loginPackage.DependenciesManagement"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
